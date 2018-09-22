@@ -1,13 +1,20 @@
+door_greetings = {'1': "Welcome to the paradise!", '2': "Welcome the next dimension" }
+
+
+
 print()
 
 print("What is your name?")
 name = input(">  ")
+
 
 print(f"Hello {name}! ")
 print("Welcome to the dungeon!")
 print("Do you go through door 1 or door 2?")
 
 door = input("> ")
+
+print(door_greetings[door])
 
 if door == "1":
     print("There is a nice vampire asking you if you enjoy life.")
@@ -41,4 +48,4 @@ elif door == "2":
 
 else:
     print("You maybe are hallucinating, we only have 2 doors...")
-    print("What did you drink this morning")
+
